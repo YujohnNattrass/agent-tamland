@@ -4,6 +4,6 @@ import { weatherAgent } from "./agents/weather-agent";
 export const mastra = new Mastra({
   agents: { weatherAgent },
   bundler: {
-    externals: ['@mastra/logger', '@mastra/libsql']
+    externals: ['@mastra/loggers', '@mastra/libsql']
   }
 });
